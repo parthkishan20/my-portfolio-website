@@ -1,14 +1,25 @@
 import siteData from "@/data/siteData.json";
+import { useTheme } from "@/components/theme-provider";
 import { Button } from "@/components/ui/button";
 
 export default function Home() {
+  const { theme } = useTheme();
+  // Determine actual theme (system or explicit)
+  let actualTheme = theme;
+  if (theme === "system" && typeof window !== "undefined") {
+    actualTheme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
+  }
   return (
     <>
       <section className="py-2">
         <div className="container mx-auto">
           <div className="grid items-center gap-8 md:gap-16 lg:grid-cols-2">
             <img
-              src="/images/projects/hero-cover.png"
+              src={
+                actualTheme === "dark"
+                  ? "/images/logos/default-monochrome-white.svg"
+                  : "/images/projects/hero-cover.png"
+              }
               alt="Parthkumar Patel Portfolio"
               className="max-h-96 w-full rounded-md object-cover"
             />
