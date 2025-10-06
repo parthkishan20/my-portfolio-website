@@ -10,6 +10,7 @@ import {
   ScrollText,
   Users,
   FileText,
+  Mail,
 } from "lucide-react"
 
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar"
@@ -37,6 +38,7 @@ const navigationItems = [
   { title: "Certifications", url: "/certifications", icon: ScrollText },
   { title: "Extracurricular", url: "/extracurricular", icon: Users },
   { title: "Resume", url: "/resume", icon: FileText },
+  { title: "Contact", url: "/contact", icon: Mail },
 ]
 
 export function AppSidebar({ ...props }: React.ComponentProps<typeof Sidebar>) {
