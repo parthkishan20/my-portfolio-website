@@ -5,7 +5,7 @@ import tailwindcss from '@tailwindcss/vite'
 import { ghPages } from 'vite-plugin-gh-pages';
 
 export default defineConfig({
-  base: "/my-portfolio-website/",
+  base: "/",
   plugins: [react(), tailwindcss(), ghPages()],
   resolve: { alias: { '@': path.resolve(__dirname, 'src') } },
 })

@@ -19,7 +19,7 @@ import Contact from "@/pages/contact"
 function App() {
   return (
     <ThemeProvider defaultTheme="dark" storageKey="vite-ui-theme">
-  <Router basename="/my-portfolio-website/">
+      <Router>
         <Routes>
           <Route element={<Layout />}>
             <Route path="/" element={<Home />} />
