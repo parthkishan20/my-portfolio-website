@@ -1,3 +1,46 @@
+# Parthkumar Patel Portfolio
+
+A modern, responsive portfolio website built with Vite, React, TypeScript, Tailwind CSS, and shadcn/ui. This project showcases my education, experience, skills, projects, certifications, extracurricular activities, and resume in a clean, professional format.
+
+## Features
+- ⚡ Fast Vite + React + TypeScript setup
+- 🎨 Beautiful UI with Tailwind CSS and shadcn/ui components
+- 🌗 Dark mode support
+- 🧭 Sidebar navigation and dynamic routing
+- 📄 Resume PDF preview
+- 🏆 Certifications, skills, and achievements
+- 📚 Education, experience, and extracurriculars
+- 📦 Organized assets and code structure
+
+## Getting Started
+1. **Install dependencies:**
+  ```sh
+  npm install
+  ```
+2. **Run the development server:**
+  ```sh
+  npm run dev
+  ```
+3. **Build for production:**
+  ```sh
+  npm run build
+  ```
+
+## Folder Structure
+- `src/pages/` — All main pages (Home, About, Education, etc.)
+- `src/components/` — Reusable UI components
+- `src/data/siteData.json` — Portfolio data
+- `public/images/` — Profile, logos, and project images
+
+## Deployment
+You can deploy this site to Vercel, Netlify, or GitHub Pages. For Vercel/Netlify, just import the repo and follow their instructions.
+
+## License
+MIT
+
+---
+
+> Built and maintained by Parthkumar Patel. Feel free to fork, contribute, or reach out for collaboration!
 # React + TypeScript + Vite
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
