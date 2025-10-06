@@ -10,7 +10,6 @@ import Certifications from './pages/certifications';
 import Extracurricular from './pages/extracurricular';
 import Contact from './pages/contact';
 import Resume from './pages/resume';
-import Test from './pages/test';
 
 const router = createBrowserRouter([
   {
@@ -56,10 +55,6 @@ const router = createBrowserRouter([
       {
         path: '/resume',
         element: <Resume />,
-      },
-      {
-        path: '/test',
-        element: <Test />,
       },
     ],
   },
